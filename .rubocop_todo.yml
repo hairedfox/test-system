@@ -1,0 +1,63 @@
+Layout/EmptyLines:
+  Exclude:
+    - 'Gemfile'
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  Exclude:
+    - 'config/environments/production.rb'
+
+Style/ExpandPathArguments:
+  Exclude:
+    - 'bin/rails'
+    - 'bin/rake'
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+
+Style/RedundantBegin:
+  Exclude:
+    - 'bin/yarn'
+
+Style/StderrPuts:
+  Exclude:
+    - 'bin/yarn'
+
+Style/StringLiterals:
+  Exclude:
+    - 'bin/spring'
+    - 'bin/yarn'
+    - 'config/application.rb'
+    - 'config/environments/production.rb'
+    - 'config/puma.rb'
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Style/GuardClause:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes/*.rb'
+    - 'config/environments/*.rb'
+
+Metrics/AbcSize:
+  Max: 60
+
+Layout/LineLength:
+  Exclude:
+    - 'config/initializers/devise.rb'
+
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - 'db/migrate/*.rb'
+    - 'db/*.rb'
+    - 'bin/**/*'
+    - 'config/initializers/devise.rb'
+    - 'Vagrantfile'
+    - 'db/seeds/**/*'
+    - 'test/**/*'
